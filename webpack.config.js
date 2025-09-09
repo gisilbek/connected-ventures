@@ -6,8 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode: 'production', // Cambiar a 'production' para build optimizado
     entry: {
-        main: './src/assets/js/index.js',   
-        events: './src/assets/js/events.js' 
+        main: './js/index.js',   
+        events: './js/events.js' 
     },
     output: {
         filename: '[name].bundle.js',
@@ -35,38 +35,38 @@ module.exports = {
     plugins: [
         // HTML principal
         new HtmlWebpackPlugin({
-            template: './public/index.html',
+            template: './index.html',
             filename: 'index.html',
             chunks: ['main'], 
         }),
         // HTML events
         new HtmlWebpackPlugin({
-            template: './public/events.html',
+            template: './events.html',
             filename: 'events.html',
             chunks: ['events'],
         }),
         new HtmlWebpackPlugin({
-            template: './public/events/8.html',
+            template: './events/8.html',
             filename: 'events/8.html',
             chunks: ['events'],
         }),
         new HtmlWebpackPlugin({
-            template: './public/events/9.html',
+            template: './events/9.html',
             filename: 'events/9.html',
             chunks: ['events'],
         }),
         new HtmlWebpackPlugin({
-            template: './public/events/7.html',
+            template: './events/7.html',
             filename: 'events/7.html',
             chunks: ['events'],
         }),
         new HtmlWebpackPlugin({
-            template: './public/events/6.html',
+            template: './events/6.html',
             filename: 'events/6.html',
             chunks: ['events'],
         }),
         new HtmlWebpackPlugin({
-            template: './public/events/1.html',
+            template: './events/1.html',
             filename: 'events/1.html',
             chunks: ['events'],
         }),
@@ -77,8 +77,8 @@ module.exports = {
 
        new CopyWebpackPlugin({
             patterns: [
-                { from: 'src/assets/img', to: 'assets/images' } 
-              
+                { from: './img', to: 'assets/images' } 
+
             ],
         }),
     ],

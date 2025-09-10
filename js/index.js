@@ -5,12 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Profile picture
   const imgEl = document.querySelector('.profile-pic');
   if (imgEl) {
-    imgEl.src = '/img/avatar/natalia-loza.png'; // ruta copiada por CopyWebpackPlugin
+    imgEl.src = 'assets/images/avatar/natalia-loza.png'; 
   }
 
   // Mostrar logos en scroll horizontal
   const logosContainer = document.getElementById('logos-container');
-  const logos = Array.from({ length: 30 }, (_, i) => `/img/logo_partner/logo${i + 1}.png`);
+  const logos = Array.from({ length: 30 }, (_, i) => `assets/images/logo_partner/logo${i + 1}.png`);
+
 
   function addLogos(container, logosArray) {
     logosArray.forEach(src => {
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (logosContainer) {
     addLogos(logosContainer, logos);
-    addLogos(logosContainer, logos); // duplicar para scroll infinito
+    addLogos(logosContainer, logos);
   }
 
   // Menu toggle para dispositivos móviles

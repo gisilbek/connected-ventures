@@ -8,27 +8,35 @@
 <body>
     <header>
         <nav class="navbar">
-        <div class="container">
+            <div class="container">
             <div class="logo">
                 <a href="#">Connected.<span class="highlight">Ventures</span></a>
             </div>
-            <ul class="nav-links">
-                <a href="../../../index.html">Home</a>
-                <a href="../../../events.html">Events</a>
-                <a href="https://www.linkedin.com/groups/13314064/" class="join-community">
-                    Join the Community
-                    <i class="fas fa-external-link-alt external-icon">
-                </a></li>
-            </ul>
-        </div>
+
+            <!-- Botón hamburguesa para móviles -->
+            <button class="menu-toggle">&#9776;</button>
+
+            <!-- Enlaces del menú -->
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li>
+                    <a href="https://www.linkedin.com/groups/13314064/" class="join-community" target="_blank">
+                        Join the Community <i class="fas fa-external-link-alt external-icon"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
 
   <main>
     <!-- Hero -->
     <section class="hero">
         <div class="container hero-inner">
-            <div class="hero-text">
-                <a href="/events.html" class="view-all-events-button">Back to Events</a>
+           <div class="parent-container-left">
+                <a href="/events.html" class="view-all-event-button">Back to Events</a>
             </div>
             <div class="event-image-container">
                 <img id="event-image" src="./src/assets/img/event9.jpg" alt="Imagen del evento 10" class="event-image">

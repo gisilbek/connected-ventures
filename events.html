@@ -7,116 +7,136 @@
 
 </head>
 <body>
-   <header class="navbar">
+   <header>
+        <nav class="navbar">
         <div class="container">
-            <div class="logo">Connected.Ventures</div>
-
-            <!-- Botón hamburguesa separado -->
-            <button class="menu-toggle">&#9776;</button>
-
-            <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="https://www.linkedin.com/groups/13314064/" class="join-community">
-                Join the Community <span class="external-icon">↗</span>
-            </a>
-            </nav>
+            <div class="logo">
+                <a href="#">Connected.<span class="highlight">Ventures</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="https://www.linkedin.com/groups/13314064/" class="join-community">
+                    Join the Community
+                    <i class="fas fa-external-link-alt external-icon"></i>
+                </a></li>
+            </ul>
         </div>
     </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Community Events</h1>
-          </div>
-          <div class="hero-text">
-            <h1>Want to Co-host an Event or Activity?</h1>
-          <p>We're always looking for passionate collaborators to create meaningful community experiences.</p>
-          <a href="events.html" class="view-all-events-button">View All Events</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Events listing -->
-    <section class="events container">
-      <div class="events-header">
-         <div class="hero-text">
-            <h1>Upcoming Events</h1>
-       </div>
-      </div>
-        <div id="events-grid" class="events-grid">
-            <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                <iframe src="events/8.html"
-                        height="500" width="100%" frameborder="0" allowfullscreen=""
-                        title="Publicación de Events"></iframe>
-                <!-- Overlay invisible -->
-                <a href="events/8.html"  
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
-            </div>     
-        </div>
-
-         <div class="events-header">
-         <div class="hero-text">
-            <h1>Past Events</h1>
-       </div>
-      </div>
-        <div id="events-grid" class="events-grid">
-           <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                <iframe src="events/9.html"
-                        height="500" width="100%" frameborder="0" allowfullscreen=""
-                        title="Publicación de Events"></iframe>
-                <!-- Overlay invisible -->
-                <a href="events/9.html"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
+    <main>
+       <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1><span class="highlight">Community</span> Events</h1>
+                <div class="hero-box">
+                    <h2>Want to Co-host an Event or Activity?</h2>
+                    <p>We're always looking for passionate collaborators to create meaningful community experiences.</p>
+                    <a href="events.html" class="hero-button">Get in Touch</a>
+                </div>
             </div>
-                    
-             <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                <iframe src="events/7.html"
-                        height="500" width="100%" frameborder="0" allowfullscreen=""
-                        title="Publicación de Events"></iframe>
-                <!-- Overlay invisible -->
-                <a href="events/7.html"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
-            </div>   
-                    
-             <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                <iframe src="events/6.html"
-                        height="500" width="100%" frameborder="0" allowfullscreen=""
-                        title="Publicación de Events"></iframe>
-                <!-- Overlay invisible -->
-                <a href="events/6.html"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
+        </section>
+        
+        <!-- Events listing -->
+        <section class="events container">
+            <div class="events-header">
+                <div class="hero-text">
+                    <h1>Upcoming Events</h1>
+                </div>
             </div>
-                    
-            <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                <iframe src="events/1.html"
-                        height="500" width="100%" frameborder="0" allowfullscreen=""
-                        title="Publicación de Events"></iframe>
-                <!-- Overlay invisible -->
-                <a href="events/1.html"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
+            <div id="events-grid" class="events-grid">
+                <!-- Tarjeta de evento - Próximo Evento -->
+                <a href="#" class="event-card">
+                   <img class="event-card-image" src="../assets/images/events/event8.jpg" alt="Event Image">
+                    <div class="event-card-content">
+                        <h3>Ecosystem Builders Meetup – October 2025</h3>
+                        <div class="event-info">
+                            <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <i class="far fa-calendar-alt"></i> <span>9/30/2025</span> <span style="margin: 0 5px;">•</span> <span>08:30-10:00</span>
+                        </div>
+                        <div class="event-info">
+                            <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <i class="fas fa-map-marker-alt"></i> <span>London, UK; register to see the full address</span>
+                        </div>
+                        <p class="event-description">
+                            Join us for an informal morning meetup hosted at KPMG for entrepreneurial ecosystem builders – individuals and organisations whose core mission is to help founders build and scale their ventures.
+                        </p>
+                        <span class="card-button">Register on Luma</span>
+                    </div>
+                </a>
             </div>
-                    
+
+            <div class="events-header">
+                <div class="hero-text">
+                    <h1>Past Events</h1>
+                </div>
+            </div>
+            <div id="events-grid-past" class="events-grid">
+                <!-- Tarjeta de evento - Evento Pasado 1 -->
+                <a href="#" class="event-card">
+                    <img class="event-card-image" src="https://placehold.co/600x400/333333/FFFFFF?text=Event+Image" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3>Fireside Chat with Tech Leaders</h3>
+                        <div class="event-info">
+                            <i class="far fa-calendar-alt"></i> <span>08/15/2025</span> <span style="margin: 0 5px;">•</span> <span>18:00-19:30</span>
+                        </div>
+                        <div class="event-info">
+                            <i class="fas fa-map-marker-alt"></i> <span>Virtual Event</span>
+                        </div>
+                        <p class="event-description">
+                            A dynamic discussion with top tech leaders on the future of startups and innovation.
+                        </p>
+                        <span class="card-button" style="background-color: #777;">View Details</span>
+                    </div>
+                </a>
+                
+                <!-- Tarjeta de evento - Evento Pasado 2 -->
+                <a href="#" class="event-card">
+                    <img class="event-card-image" src="https://placehold.co/600x400/555555/FFFFFF?text=Event+Image" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3>Startup Funding Workshop</h3>
+                        <div class="event-info">
+                            <i class="far fa-calendar-alt"></i> <span>07/20/2025</span> <span style="margin: 0 5px;">•</span> <span>10:00-12:00</span>
+                        </div>
+                        <div class="event-info">
+                            <i class="fas fa-map-marker-alt"></i> <span>San Francisco, CA</span>
+                        </div>
+                        <p class="event-description">
+                            Learn the fundamentals of securing seed funding from experienced investors and founders.
+                        </p>
+                        <span class="card-button" style="background-color: #777;">View Details</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Modal detalle evento -->
+        <div id="modal" class="modal" aria-hidden="true">
+            <div class="modal-backdrop" id="modalClose"></div>
+            <div class="modal-panel" role="dialog" aria-modal="true">
+                <button class="modal-close" id="modalCloseBtn">✕</button>
+                <div id="modalContent"></div>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Modal detalle evento -->
-    <div id="modal" class="modal" aria-hidden="true">
-      <div class="modal-backdrop" id="modalClose"></div>
-      <div class="modal-panel" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalCloseBtn">✕</button>
-        <div id="modalContent"></div>
-      </div>
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Connected. All rights reserved.</small>
-    </div>
-  </footer>
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> Connected. All rights reserved.</small>
+        </div>
+    </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

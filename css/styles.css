@@ -183,8 +183,8 @@
 }
 
 .hero-section .connect-button {
-    background-color: #0a66c2;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -195,7 +195,7 @@
 }
 
 .hero-section .connect-button:hover {
-    background-color: #084c90;
+    background-color: #dfdfdf;
 }
 
 .hero-section .welcome-text h1 {

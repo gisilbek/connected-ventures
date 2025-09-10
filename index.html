@@ -14,12 +14,12 @@
                 <a href="#">Connected.<span class="highlight">Ventures</span></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="https://www.linkedin.com/groups/13314064/" class="join-community">
+                <a href="#">Home</a>
+               <a href="events.html">Events</a>
+                <a href="https://www.linkedin.com/groups/13314064/" class="join-community">
                     Join the Community
-                    <i class="fas fa-external-link-alt external-icon"></i>
-                </a></li>
+                    <i class="fas fa-external-link-alt external-icon">
+                </a>
             </ul>
         </div>
     </header>
@@ -31,7 +31,19 @@
                     <div class="profile-card">
                         <img src="./assets/img/avatar/natalia-loza.png" alt="Natalia Loza" class="profile-pic">
                         <h3>Natalia Loza</h3>
-                        <button class="connect-button">Connect on LinkedIn</button>
+                       <button class="connect-button" 
+                                onclick="window.open('https://www.linkedin.com/in/nata-loza/', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-linkedin h-5 w-5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 
+                                        2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            Connect on LinkedIn
+                    </button>
                     </div>
                     <div class="welcome-text">
                         <h1>Welcome to <span class="highlight">Connected.Ventures</span></h1>
@@ -53,22 +65,36 @@
         <section class="explore-community-section">
             <div class="container">
                 <h2>Explore the <span class="highlight">Community</span></h2>
-                <div class="community-content">
-                    <div class="community-card">
-                        <iframe src="https://www.linkedin.com/embed/feed/update/groups/13314064/" 
-                                height="500" width="100%" frameborder="0" allowfullscreen=""
-                                title="Publicación de LinkedIn"></iframe>
-                    </div>
-                    <div class="community-card">
-                        <iframe src="https://form.typeform.com/to/UQhdCN8w?typeform-source=connected.ventures" 
-                                height="500" width="100%" frameborder="0" allowfullscreen=""
-                                title="Publicación de Typeform"></iframe>
-                    </div>
-                </div>
             </div>
         </section>
+     <section class="events container">   
 
-    </main>
+            <div id="events-grid-past" class="events-grid">
+                  <a href="https://www.linkedin.com/embed/feed/update/groups/13314064/" class="event-card">
+                    <img class="event-card-image" src="../assets/images/community/linkedin.png" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3> Entrepreneurial Ecosystem Builders Community</h3>
+                        <p class="event-description">
+                           A free community for entrepreneurial ecosystem builders. Join regular meet-ups, share and gain key learnings, and find collaborators – from forming a tender consortium to co-hosting events or co-creating podcasts.
+
+                           We welcome collaboration and offer tailor-made introductions.
+                        </p>
+                    </div>
+                </a>
+                <a href="https://form.typeform.com/to/UQhdCN8w?typeform-source=connected.ventures" class="event-card">
+                        <img class="event-card-image" src="../assets/images/community/typeform.png" alt="Past Event Image">
+                        <div class="event-card-content">
+                            <h3> introductions</h3>
+                            <p class="event-description">
+                                Request personalised introductions to fellow ecosystem builders.
+
+                                No catch – we simply want to strengthen connectivity among entrepreneurial ecosystem builders.
+                            </p>
+                        </div>
+                    </a>
+                <a></a>
+            </div>
+        </section>
 
    <!-- Events listing -->
         <section class="events container">

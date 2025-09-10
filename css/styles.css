@@ -477,8 +477,8 @@
 }
 
 .view-all-events-button {
-    background-color: #e53935;
-    color: #fff;
+    background-color: #f0ebeb;
+    color: #000000;
     padding: 15px 30px;
     border: none;
     border-radius: 8px;
@@ -487,11 +487,19 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    margin-left: auto; 
+    margin-right: 0;  
+    width: fit-content; 
+}
+
+.parent-container {
+  display: flex;
+  justify-content: flex-end; /* manda el enlace a la derecha */
 }
 
 .view-all-events-button:hover {
-    background-color: #c62828;
+    background-color: #edebeb;
     transform: translateY(-2px);
 }
 
@@ -555,6 +563,71 @@
 
     .contact-info strong {
         color: #333;
+    }
+
+    .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            justify-content: center;
+        }
+
+    .contact-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        padding: 2rem 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        max-width: 300px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+        color: #e53935;
+    }
+
+    .contact-card h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 0.5rem;
+    }
+
+    .contact-card p {
+        font-size: 0.95rem;
+        color: #777;
+        margin: 0 0 1rem;
+    }
+
+    .contact-link {
+        display: inline-block;
+        background-color: transparent;
+        color: #e53935;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        border: 1px solid #e53935;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    
+    .contact-link:hover {
+        background-color: #e53935;
+        color: #fff;
     }
 
     .social-links {
@@ -621,7 +694,7 @@
     }
 
     .submit-button {
-        width: 100%;
+        width: 30%;
         background-color: #e53935;
         color: #fff;
         padding: 15px 25px;
@@ -747,6 +820,46 @@
     .gallery-container img:hover {
         transform: scale(1.05);
     }
+
+    /* ===========================
+           CTA Section
+        =========================== */
+        .cta-section {
+            padding: 80px 20px;
+            background-color: #fff;
+            color: #000000;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #e53935;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f1f1f1;
+            color: #c62828;
+        }
+
 
     /* ===========================
         Responsive Unificado

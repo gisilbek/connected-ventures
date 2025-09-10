@@ -70,80 +70,137 @@
 
     </main>
 
-     <section class="events-section">
-            <div class="container">
-                <h2>Upcoming <span class="highlight">Events</span></h2>
-                <div class="events-grid">
-                    <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                        <iframe src="events/8.html"
-                                height="500" width="100%" frameborder="0" allowfullscreen=""
-                                title="Publicación de Events"></iframe>
-                        <!-- Overlay invisible -->
-                        <a href="events/8.html"  
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
-                    </div>
-                    
-                       <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                        <iframe src="events/9.html"
-                                height="500" width="100%" frameborder="0" allowfullscreen=""
-                                title="Publicación de Events"></iframe>
-                        <!-- Overlay invisible -->
-                        <a href="events/9.html"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
-                    </div>
-
-                    <div class="event-card" style="position: relative; width: 100%; max-width: 600px; margin: auto;">
-                        <iframe src="events/7.html"
-                                height="500" width="100%" frameborder="0" allowfullscreen=""
-                                title="Publicación de Events"></iframe>
-                        <!-- Overlay invisible -->
-                        <a href="events/7.html" 
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 10;"></a>
-                    </div>
-                    <!-- Add more event cards as needed -->
+   <!-- Events listing -->
+        <section class="events container">
+           
+            <div class="events-header">
+                <div class="hero-text">
+                    <h1><span class="highlight">Events</span></h1>
                 </div>
+            </div>
+             <div class="parent-container">
+                <a href="events.html" class="view-all-events-button">View All Events</a>
+            </div>
+            <div id="events-grid-past" class="events-grid">
+                  <a href="./events/8.html" class="event-card">
+                    <img class="event-card-image" src="../assets/images/events/event8.png" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3> Ecosystem Builders Meetup – October 2025</h3>
+                        <div class="event-info">
+                           <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                           <i class="far fa-calendar-alt"></i> <span>9/30/2025</span> <span style="margin: 0 5px;">•</span> <span>08:30-10:00</span>
+                        </div>
+                        <div class="event-info">
+                            <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <i class="fas fa-map-marker-alt"></i> <span>London, UK; register to see the full address </span>
+                        </div>
+                        <p class="event-description">
+                           In June 2025, we partnered with the Global Entrepreneurship Network (GEN) to support the UK delegation at the Global
+                         Entrepreneurship Congress...
+                        </p>
+                    </div>
+                </a>
+                <!-- Tarjeta de evento - Evento Pasado 1 -->
+                <a href="./events/9.html" class="event-card">
+                    <img class="event-card-image" src="../assets/images/events/event9.png" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3>Fireside Chat with Tech Leaders</h3>
+                        <div class="event-info">
+                          <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <i class="far fa-calendar-alt"></i> <span>08/28/2025</span> <span style="margin: 0 5px;">•</span> <span>9:30-12:00</span>
+                        </div>
+                        <div class="event-info">
+                          <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                              <circle cx="12" cy="10" r="3"></circle>
+                          </svg>
+                            <i class="fas fa-map-marker-alt"></i> <span>London & Partners, London Fire Brigade, 169 Union St, London SE1 0LL</span>
+                        </div>
+                        <p class="event-description">
+                            Join us for a roundtable and networking session to exchange ideas, connect with entrepreneurical ecosystem builders, and explore what's next ...
+                        </p>
+                    </div>
+                </a>
                 
-               <a href="events.html" class="view-all-events-button">View All Events</a>
+                <!-- Tarjeta de evento - Evento Pasado 2 -->
+                <a href="./events/1.html" class="event-card">
+                    <img class="event-card-image" src="../assets/images/events/event1.png" alt="Past Event Image">
+                    <div class="event-card-content">
+                        <h3>Startup Funding Workshop</h3>
+                        <div class="event-info">
+                          <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <i class="far fa-calendar-alt"></i> <span>07/30/2025</span> <span style="margin: 0 5px;">•</span> <span>10:00-11:00</span>
+                        </div>
+                        <div class="event-info">
+                            <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.2em; height: 1.2em;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <i class="fas fa-map-marker-alt"></i> <span>The GenDen, Clare Market, London WC2A 2AB</span>
+                        </div>
+                        <p class="event-description">
+                            In July 2025, we hosted a meetup at LSE Generate, the university's home for entrepreneurship. The event was co-organised by Connected.Ventures...
+                        </p>
+                    </div>
+                </a>
+
             </div>
         </section>
-        <section class="get-in-touch-section">
+
+       <section class="get-in-touch-section">
             <div class="container">
-                <div class="get-in-touch-content">
-                    <div class="get-in-touch-text">
-                        <h2>Get in <span class="highlight">Touch</span></h2>
-                        <p>We'd love to hear from you. Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out.</p>
-                        <div class="contact-info">
-                            <p><strong>Email:</strong> info@connected.ventures</p>
-                            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="social-icon">LinkedIn</a>
-                            <a href="#" class="social-icon">Twitter</a>
-                            <a href="#" class="social-icon">Instagram</a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-button">Send Message</button>
-                        </form>
-                    </div>
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <div class="contact-grid">
+                    <a href="#" class="contact-card">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-6 w-6 text-primary">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <h3>Community Group</h3>
+                        <span class="contact-link">LinkedIn Group</span>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle h-6 w-6 text-primary">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                        <h3>WhatsApp</h3>
+                        <span class="contact-link">Chat</span>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-6 w-6 text-primary">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <h3>Email</h3>
+                        <span class="contact-link">Email</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-
+        <section class="cta-section">
+            <div class="container">
+                <h2>Want to Co-host an Event?</h2>
+                <p>We're always looking for passionate collaborators to create meaningful community experiences.</p>
+                <a href="events.html" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
     <!-- Webpack will inject the JS here -->
 </body>
 </html>
